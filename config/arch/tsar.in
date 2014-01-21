@@ -1,0 +1,9 @@
+# Tsar specific config options
+
+## select ARCH_SUPPORTS_32
+## select ARCH_DEFAULT_32
+## select ARCH_DEFAULT_LE
+## select ARCH_USE_MMU
+## select ARCH_SUPPORTS_WITH_FLOAT
+## select ARCH_FLOAT_SW
+
