@@ -1,0 +1,11 @@
+--- gcc-4.8.2/libgcc/config.host	2013-07-09 23:35:57.000000000 +0200
++++ gcc-4.8.2_patch/libgcc/config.host	2014-01-16 12:07:34.036321792 +0100
+@@ -723,7 +723,7 @@
+ mips*-*-linux*)				# Linux MIPS, either endian.
+ 	extra_parts="$extra_parts crtfastmath.o"
+ 	tmake_file="${tmake_file} t-crtfm mips/t-mips16"
+-	md_unwind_header=mips/linux-unwind.h
++	#md_unwind_header=mips/linux-unwind.h
+ 	if test "${ac_cv_sizeof_long_double}" = 16; then
+ 		tmake_file="${tmake_file} mips/t-tpbit"
+ 	fi
