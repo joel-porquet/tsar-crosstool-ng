@@ -14,4 +14,8 @@ CT_DoArchTupleValues() {
     # override ABI flags
     CT_ARCH_ABI_CFLAG="-mabi=32"
     CT_ARCH_WITH_ABI="--with-abi=32"
+
+    # override mtune flags
+    CT_ARCH_TUNE_CFLAG="-mtune=mips32"
+    CT_ARCH_WITH_TUNE="--with-tune=mips32"
 }
